@@ -1,3 +1,49 @@
-<button class="add-user-button" mat-fab matTooltip="Add user" [matTooltipPosition]="'above'">
-    <mat-icon>add</mat-icon>
-  </button>
+<mat-card appearance="outlined">
+  <mat-card-content>
+    <table class="table">
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          E-Mail
+        </th>
+        <th>
+          City
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Ahmet Yapicilar
+        </td>
+        <td>
+          a.yapicilar&#64;gmail.com
+        </td>
+        <td>
+          Arnsberg
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Ahmet Yapicilar
+        </td>
+        <td>
+          a.yapicilar&#64;gmail.com
+        </td>
+        <td>
+          Arnsberg
+        </td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>
+<button
+  (click)="openDialog()"
+  class="add-user-button"
+  mat-fab
+  matTooltip="Add user"
+  [matTooltipPosition]="'above'"
+>
+  <mat-icon>add</mat-icon>
+</button>
