@@ -44,6 +44,7 @@ export class DialogAddUserComponent implements OnInit {
     const userRef = await addDoc(collection(this.firestore, 'users'), {
       firstName: this.user.firstName,
       lastName: this.user.lastName,
+      email: this.user.email,
       birthDate: this.user.birthDate,
       street: this.user.street,
       zipCode: this.user.zipCode,

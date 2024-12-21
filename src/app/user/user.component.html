@@ -12,27 +12,15 @@
           City
         </th>
       </tr>
-      <tr>
+      <tr *ngFor="let user of users" (click)="showUserDetail(user)">
         <td>
-          Ahmet Yapicilar
+          {{ user.firstName}} {{ user.lastName }}
         </td>
         <td>
-          a.yapicilar&#64;gmail.com
+          {{ user.email }}
         </td>
         <td>
-          Arnsberg
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          Ahmet Yapicilar
-        </td>
-        <td>
-          a.yapicilar&#64;gmail.com
-        </td>
-        <td>
-          Arnsberg
+          {{ user.city }}
         </td>
       </tr>
     </table>
